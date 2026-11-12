@@ -185,6 +185,6 @@ if __name__ == "__main__":
                         help="stop after this many iterations (for a quick check)")
     parser.add_argument("--wandb-entity", default=None,
                         help="Weights & Biases team/user (default: your default entity)")
-    parser.add_argument("--wandb-mode", default="online",
+    parser.add_argument("--wandb-mode", default="disabled",
                         choices=["online", "offline", "disabled"])
     main(**vars(parser.parse_args()))

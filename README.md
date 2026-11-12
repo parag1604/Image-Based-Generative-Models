@@ -51,14 +51,14 @@ Both splits are read with `torchvision.datasets.ImageFolder` and concatenated: t
 
 Every script accepts `--data-path`, `--batch-size`, `--num-epochs`, `--learning-rate`, `--seed`, `--log-freq` (print losses every so many iterations), `--save-freq` (save weights to `models/` and 64-image sample grids to `samples/` every so many iterations) and `--max-iters` (stop early, for a quick check). Run `python <script>.py --help` for the rest; the defaults are the settings used for the results below.
 
-Losses and sample grids are logged to [Weights & Biases](https://wandb.ai) (project `Generative-Models`). Pass `--wandb-entity <your team>` to log to a team, or `--wandb-mode disabled` to train without an account (the grids in `samples/` are still written).
+Sample grids are always written to `samples/`. Logging to [Weights & Biases](https://wandb.ai) is **off by default**; pass `--wandb-mode online` (and optionally `--wandb-entity <your team>`) to log losses and grids to the project `Generative-Models`.
 
 Quick check that everything works (well under a minute per script on a GPU):
 
 ```bash
-python vae.py --max-iters 300 --wandb-mode disabled
-python gan.py --max-iters 300 --wandb-mode disabled
-python ddpm.py --max-iters 300 --save-freq 250 --wandb-mode disabled
+python vae.py --max-iters 300
+python gan.py --max-iters 300
+python ddpm.py --max-iters 300 --save-freq 250
 ```
 
 ### Variational Autoencoder (`vae.py`)
