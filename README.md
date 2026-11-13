@@ -13,7 +13,7 @@ Some real training images (random horizontal flips, resized to 64×64):
 Please note that the theory corresponding to the codes is hosted on these pages:
 - VAE: [Variational Autoencoders](https://parag1604.github.io/notes/Machine-Learning/Variational-Autoencoders)
 - GAN: [Generative Adversarial Networks](https://parag1604.github.io/notes/Machine-Learning/Generative-Adversarial-Networks)
-- DDPM: [Score-Based Models](https://parag1604.github.io/notes/Machine-Learning/Score-Based-Models) (its last section connects denoising score matching to DDPM; a dedicated diffusion lecture is planned)
+- DDPM: [Denoising Diffusion Models](https://parag1604.github.io/notes/Machine-Learning/Denoising-Diffusion-Models) (score view: [Score-Based Models](https://parag1604.github.io/notes/Machine-Learning/Score-Based-Models))
 
 ## Python Environment Setup
 
